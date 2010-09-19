@@ -1,0 +1,21 @@
+<h2>Stats for</h2>
+	
+<div class="url">
+	<a class="diminitiveurl" href="<%=h @diminutive_url %>"><%=h @diminutive_url %></a>
+</div>
+
+Number of Clicks: <%= @link.count%>
+
+Firefox: <%= browser_count(:firefox)%>
+
+IE: <%= browser_count(:ie)%>
+
+Chrome: <%= browser_count(:chrome)%>
+
+Safari: <%= browser_count(:safari)%>
+
+Other: <%= browser_count(:other)%>
+
+Windows: <%= os_count(:windows)%>
+
+Mac OS: <%= os_count(:macos)%>

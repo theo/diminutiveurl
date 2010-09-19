@@ -1,0 +1,10 @@
+
+<%= form_for @link, :url => { :action => "create" } do |f| %>
+  <table class="center">
+  	<tr><td colspan="2" class="center"><%= error_message_on @link, :url_with_protocol, :prepend_text => "URL " %></td></tr>
+	  <tr>
+		  <td><%= f.text_field :url, :size => '70', :value=> 'http://' %></td>
+	    <td><%= f.submit "Diminutify!", :class => 'submit' %></td>
+    </tr>
+  </table>
+<% end %>

@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>diminutiveURL.com - why use a big (or tiny url) when a diminutive url will suffice?</title>
+  <%= stylesheet_link_tag 'reset' %>
+  <%= stylesheet_link_tag 'scaffold' %>
+</head>
+<body>
+<div id="header">
+  <a class="logo" href="/"><%= image_tag('diminutiveurl_logo_v4.jpg')%><h1>diminutive URL</h1></a>
+  <br/>
+  <h2>Make any URL shorter</h2>
+  <div id="subheader">
+    <% if rand(2) == 1 -%>why use a big (or tiny url) when a <span>diminutive</span> url will suffice?
+	  <% else -%> Simple. Easy. Do it. I dare you.
+	  <% end -%>
+	</div>
+</div>
+ 
+<div class="content">
+	<% if flash[:notice] -%>
+    <p class="notice"><%= flash[:notice] %></p>
+  <% end -%>
+	<% if flash[:error] -%>
+    <p class="error"><%= flash[:error] %></p>
+  <% end -%>
+<%= yield  %>
+</div>
+<div class="center">Serving <strong><%=@num_links-%></strong> links and <strong><%=@clickthroughs%></strong> clicks since <%=nice_date(@since) %></div>
+<div id="footer">
+	<div id="about"></div>
+	<div id="copyright">&copy; 2009 <a href="http://www.notedpath.com">A Noted Path</a></div></div>
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-2486542-5");
+	pageTracker._trackPageview();
+	} catch(err) {}</script>
+	<script src="http://diminutiveurl.uservoice.com/pages/general/widgets/tab.js?alignment=left&amp;color=FFFFFF" type="text/javascript"></script>
+</body>
+</html>

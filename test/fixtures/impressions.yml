@@ -1,0 +1,53 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  server_name: MyString
+  path_info: MyString
+  remote_host: MyString
+  http_accept_encoding: MyString
+  http_user_agent: MyString
+  server_protocol: MyString
+  http_cache_control: MyString
+  http_accept_language: MyString
+  http_host: MyString
+  remote_addr: MyString
+  server_software: MyString
+  http_keep_alive: MyString
+  http_referer: MyString
+  http_cookie: MyString
+  http_accept_charset: MyString
+  http_accept_charset: MyString
+  request_uri: MyString
+  server_port: MyString
+  gateway_interface: MyString
+  query_string: MyString
+  remote_user: MyString
+  http_accept: MyString
+  request_method: MyString
+  http_connection: MyString
+
+two:
+  server_name: MyString
+  path_info: MyString
+  remote_host: MyString
+  http_accept_encoding: MyString
+  http_user_agent: MyString
+  server_protocol: MyString
+  http_cache_control: MyString
+  http_accept_language: MyString
+  http_host: MyString
+  remote_addr: MyString
+  server_software: MyString
+  http_keep_alive: MyString
+  http_referer: MyString
+  http_cookie: MyString
+  http_accept_charset: MyString
+  http_accept_charset: MyString
+  request_uri: MyString
+  server_port: MyString
+  gateway_interface: MyString
+  query_string: MyString
+  remote_user: MyString
+  http_accept: MyString
+  request_method: MyString
+  http_connection: MyString
